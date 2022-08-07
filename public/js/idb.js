@@ -15,14 +15,14 @@ request.onsuccess = function(event) {
 request.onerror = function(event) {
     console.log(event.target.errorCode);
 };
-function save(record) {
-    const transaction = db.transaction(['new_trans', 'readwrite']);
-    const budgetObjectStore = transaction.objectStore('new_trans');
+function saveRecord(record) {
+    const transaction = db.transaction(['new_transaction', 'readwrite']);
+    const budgetObjectStore = transaction.objectStore('new_transaction');
     budgetObjectStore.add(record);
 };
 function uploadTransaction() {
-    const transaction = db.transaction(['new_trans'], 'readwrite');
-    const budgetObjectStore = transacton.objectStore('new_trans');
+    const transaction = db.transaction(['new_transaction'], 'readwrite');
+    const budgetObjectStore = transacton.objectStore('new_transaction');
     const getAll = budgetObjectStore.getAll();
     getAll.onsuccess = function() {
         if (getAll.result.length > 0) {
@@ -38,8 +38,8 @@ function uploadTransaction() {
                 if (serverResponse.message) {
                     throw new Error(serverResponse);
                 }
-                const transaction = db.transaction(['new_trans'], 'readwrite');
-                const budgetObjectStore = transaction.objectStore('new_trans');
+                const transaction = db.transaction(['new_transaction'], 'readwrite');
+                const budgetObjectStore = transaction.objectStore('new_transaction');
                 budgetObjectStore.clear();
                 alert('All transactions submitted');
             }).catch(err => {
