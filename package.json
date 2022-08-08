@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cmc496/budget-tracker"
+    "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cmc496/budget-tracker/issues"
+    "url": "https://github.com/coding-boot-camp/unit18hw/issues"
   },
   "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
   "dependencies": {
