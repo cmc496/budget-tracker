@@ -30,7 +30,7 @@ This repo hold the code for a PWA (Progressive Web Application) for a budget tra
 * Run "npm start".
 
 ## Screenshot:
-* screenshot
+* ![Budget-TrackerScreenshot](https://user-images.githubusercontent.com/99096273/183322815-54c6953c-d33b-4c37-8bf9-e5a32b42bf1d.png)
 
 ## Author:
 * Caitlin Clifford
