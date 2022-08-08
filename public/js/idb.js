@@ -16,7 +16,7 @@ request.onerror = function(event) {
     console.log(event.target.errorCode);
 };
 function saveRecord(record) {
-    const transaction = db.transaction(['new_transaction', 'readwrite']);
+    const transaction = db.transaction(['new_transaction'], 'readwrite');
     const budgetObjectStore = transaction.objectStore('new_transaction');
     budgetObjectStore.add(record);
 };
