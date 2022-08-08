@@ -29,7 +29,7 @@ self.addEventListener('install', function (e) {
 
 self.addEventListener('activate', function (e) {
     e.waitUntil(
-        cahces.keys().then(function (keyList) {
+        caches.keys().then(function (keyList) {
             let cacheKeepList = keyList.filter(function (key) {
                 return key.indexOf(APP_PREFIX);
             });
