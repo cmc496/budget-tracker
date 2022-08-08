@@ -1,5 +1,7 @@
 # Budget Tracker
 
+## [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
 ## Description:
 This repo hold the code for a PWA (Progressive Web Application) for a budget tracker. This budget tracker can be used offline and it can be downloaded to any device.
 
